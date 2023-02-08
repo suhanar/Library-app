@@ -9,7 +9,7 @@ import {BrowserRouter, Route,Routes } from 'react-router-dom';
 import BookList from './components/BookList';
 
 
-const API_KEY = 'AIzaSyC3jVLIYb8-6yobnr4DBvTvI_sNxzG_wHs';
+const API_KEY = process.env.REACT_APP_API_KEY;
 function App({add, setAdd, addItem,favorite, addFavorite,removeItem,removeFavorite}) {
   const [search,setSearch] = useState('');
   const [book,setBook] = useState([]);
